@@ -62,3 +62,28 @@ flutter:
   assets:
   - imagens/FundoInicial.png
   - imagens/ubatuba.png
+  - imagens/Escalada.png
+  - imagens/PraiaItamambuca.png
+  - imagens/letraescalada.png
+  - imagens/letraitamambuca.png
+  - imagens/Mergulhador.png
+  - imagens/ilhaanchieta.png
+  - imagens/leMer.png
+  - imagens/leAnchi.png
+  - imagens/Cano.png
+  - imagens/leCano.png
+  - imagens/RioPu.png
+  - imagens/leRioPu.png
+  - imagens/Cicli.png
+  - imagens/leCicli.png
+  - imagens/Atlan.png
+  - imagens/leAtlan.png
+  - imagens/Cacho.png
+  - imagens/leCacho.png
+  - imagens/CachoRe.png
+  - imagens/leCachoRe.png
+  - imagens/Bar.png
+  - imagens/leBar.png
+  - imagens/CostaDeslu.png
+  - imagens/leCostaDeslu.png
+  

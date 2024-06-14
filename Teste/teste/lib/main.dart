@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:teste/barco.dart';
+import 'package:teste/cachoeirismo.dart';
+import 'package:teste/canoagem.dart';
+import 'package:teste/ciclismo.dart';
+import 'package:teste/mergulhador.dart';
+import 'package:teste/segundapag.dart';
 
 void main() {
   runApp(const EcotubaApp());
@@ -42,18 +48,24 @@ class HomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      _buildActivityButton(Icons.scuba_diving, 'mergulho'),
-                      _buildActivityButton(Icons.kayaking, 'canoagem'),
-                      _buildActivityButton(Icons.hiking, 'escalada'),
+                      IconButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Mergulhador()));}, icon: const Icon(Icons.scuba_diving, color: Colors.white, size:70, )),
+                      IconButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => SegundaPag()));}, icon: const Icon(Icons.hiking, color: Colors.white, size:70,)),
+                      IconButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Canoagem()));}, icon: const Icon(Icons.kayaking, color: Colors.white, size:70,)),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       
-                      _buildActivityButton(Icons.directions_bike, 'ciclismo'),
-                      _buildActivityButton(Icons.waterfall_chart, 'cachoeirismo'),
-                      _buildActivityButton(Icons.directions_boat, 'barco'),
+                      IconButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Ciclismo()));}, icon: const Icon(Icons.directions_bike, color: Colors.white, size:70,)),
+                     IconButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Cachoeirismo()));}, icon: const Icon(Icons.waterfall_chart, color: Colors.white, size:70,)),
+                      IconButton(onPressed: () {Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Barco()));}, icon: const Icon(Icons.directions_boat, color: Colors.white, size:70,)),
                     ],
                   ),
                 ],
@@ -80,20 +92,6 @@ class HomePage extends StatelessWidget {
     
   }
 
-  Widget _buildActivityButton(IconData icon, String label) {
-    return Column(
-      children: [
-        IconButton(
-          icon: Icon(icon, size: 50, color: Colors.white),
-          onPressed: () {
-            // Adicione a navegação ou funcionalidade desejada aqui
-          },
-        ),
-        Text(
-          label,
-          style: const TextStyle(color: Colors.white),
-        ),
-      ],
-    );
-  }
+  
+
 }
